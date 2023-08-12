@@ -13,4 +13,4 @@ columns:
  quality: int64
 
 target_columns:
- quality: float64
+ name: quality

@@ -14,17 +14,10 @@ class DataValidation:
             for col in all_cols:
                 if col not in self.config.all_schema:
                     status = False
-                    with open(self.config.status_file, "w") as f:
-                        f.write(f"failed validation with column: {col} \n")
                     break
-                else:
-                    with open(self.config.status_file, "w") as f:
-                        f.write(f"validation passed with column: {col}")
-                # if self.config.all_schema[col] != type(col):
-                #     status = False
-                #     with open(self.config.status_file, "w") as f:
-                #         f.write(f"failed validation with column: {col}")
-                #     break
+                
+            with open(self.config.status_file, "w") as f:
+                f.write(f"validation status: {status} \n")
             return status
         except Exception as e:
             raise e

@@ -1,0 +1,15 @@
+artifact_uri: file:///C:/Users/SGU/Projects/mlops-with-mlflow/demo_mlflow/mlruns/0/4aafe610884e456e8054e47e9d2ac34c/artifacts
+end_time: 1691829419201
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4aafe610884e456e8054e47e9d2ac34c
+run_name: dapper-fawn-554
+run_uuid: 4aafe610884e456e8054e47e9d2ac34c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1691829414904
+status: 3
+tags: []
+user_id: SGU
