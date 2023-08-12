@@ -27,6 +27,12 @@ model_evaluation:
   model_path: artifacts/model_trainer/model.joblib
   metric_file: metric.json
 
+mlflow_config:
+  root_dir: artifacts
+  experiment_name: ElasticNet regression
+  run_name: mlops
+  registered_model_name: ElasticNet
+
 
 
 

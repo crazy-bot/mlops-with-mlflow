@@ -25,10 +25,11 @@ class ModelEvaluation:
         
         model = load_bin(self.config.model_path)
         
+        mlflow.set_experiment("elasticnet regression")
         mlflow.set_tracking_uri(self.config.mlflow_uri)
         tracking_url_type_store = urlparse(mlflow.get_tracking_uri()).scheme
         
-        with mlflow.start_run():
+        with mlflow.start_run(run_name="1st run"):
             pred_y = model.predict(test_x)
             mae, mse, r2 = self.eval_metrics(test_y, pred_y)
             
